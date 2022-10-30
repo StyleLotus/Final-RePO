@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    void StartNew()
+    public void StartNew()
     {
         SceneManager.LoadScene(1);
     }
 
-    void ExitApplication()
+    public void ExitApplication()
     {
         #if UNITY_EDITOR
             EditorApplication.ExitPlaymode();
